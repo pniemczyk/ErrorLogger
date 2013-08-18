@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>ErrorLogger Sample two</title>
+
+  <link rel="shortcut icon" type="image/png" href="">
+  <script type="text/javascript" src="../src/jquery-1.10.2.min.js"></script>
+
+  <script type="text/javascript" src="../lib/jquery.error.logger.js"></script>
+  <style>
+    .menu{
+      position:fixed;
+      top: 0;
+      width: 100%;
+      height: 20px;
+      background-color: #000;
+    }  
+    .menu span{ 
+      color: #FFF;
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    .menu a{
+      color: #FFF;
+      padding: 0 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .menu a:hover{
+      color: red;
+    }  
+    .log{
+      position:fixed;
+      top:20px;
+      width:300px;
+      height:100px;
+      overflow:scroll;
+      z-index: 1;
+      background-color: #000;
+      color: #FFF;
+    }  
+    td img{
+      width: 400px;
+      height: 307px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <span>ErrorLogger version:<span id='version'></span></span>
+    <a id="refresh" href="#" >Refresh page</a>
+    <a id="throwError" href="#" >throw error</a>
+    <span>Error buffer length:<span id='errorCount'>0</span></span>
+  </div>
+  <div id="onErrors">
+  </div>
+  <script type="text/javascript" src="sample_two.js"></script>
+</body>
+</html>
